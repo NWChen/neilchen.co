@@ -1,0 +1,21 @@
+env: standard
+runtime: nodejs20
+service: default
+inbound_services:
+  - warmup
+automatic_scaling:
+  min_idle_instances: 1
+  min_instances: 1
+
+env_variables:
+  NEXT_PUBLIC_API_URL: "https://neilchen.co"
+#   BUCKET_NAME: "example-gcs-bucket"
+
+handlers:
+# - url: /stylesheets
+#   static_dir: stylesheets
+
+  - url: /.*
+    secure: always
+    redirect_http_response_code: 301
+    script: auto
