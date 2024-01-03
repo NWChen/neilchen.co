@@ -182,6 +182,34 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"jax.md": {
+	id: "jax.md";
+  slug: "finding-brachistochrone-with-jax";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"repl.md": {
+	id: "repl.md";
+  slug: "repl-in-vim";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tshirt.md": {
+	id: "tshirt.md";
+  slug: "building-t-shirt-shooting-robot";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"wood.md": {
+	id: "wood.md";
+  slug: "building-wooden-things-with-hand-tools";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
