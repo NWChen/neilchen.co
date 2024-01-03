@@ -1,8 +1,8 @@
 ---
+author: Neil Chen
+pubDatetime: 2023-03-29T00:00:00Z
 title: Finding the brachistochrone with JAX
-date: 2023-03-29
-categories:
-  - analytical
+slug: finding-brachistochrone-with-jax
 ---
 
 Here's the brachistochrone problem:
@@ -11,7 +11,7 @@ Here's the brachistochrone problem:
 
 The shortest path from A to B is a straight line, but it's actually not the fastest path:
 
-![](/img/jax/optimal.gif)
+![](@assets/images/jax/optimal.gif)
 
 We can get better results by accelerating the ball down a steeper path at first, then taking a bit of a loss as the ball rolls down the more shallow latter part of the path. The optimal solution to this problem is a cycloid. Can we arrive at the optimal path numerically instead? What if we use gradient descent?
 
@@ -67,6 +67,6 @@ Our solution should roughly converge on the optimal path:
 
 {{< rawhtml >}}
 <video width="800" height="600" controls="controls">
-	<source src="/img/jax/brachistochrone.mp4" type="video/mp4">
+	<source src="@assets/images/jax/brachistochrone.mp4" type="video/mp4">
 </video>
 {{< /rawhtml >}}

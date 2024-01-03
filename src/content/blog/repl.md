@@ -1,8 +1,8 @@
 ---
+author: Neil Chen
+pubDatetime: 2021-01-16T00:00:00Z
 title: A REPL in Vim
-date: 2021-01-16
-categories:
-  - analytical
+slug: repl-in-vim
 ---
 
 One of the tools I wish I'd known about sooner is [vim-repl](https://github.com/sillybun/vim-repl). It's a `vim` plugin that opens an interactive REPL, configurable based on source file type (`.py`, `.hs`, `.scala`, ...)
